@@ -44,10 +44,10 @@
         font-size: 16px;
       }
       .main {
-        width: 96%;
         max-width: 800px;
-        margin: 0 auto;
+        margin: 0 3rem 0 1rem;
         padding: 55% 0 4rem 0;
+        position: relative;
       }
       .full-width {
         width: 100%;
@@ -56,20 +56,31 @@
         transform: rotate(270deg);
         margin-bottom: 60%;
       }
-      .playlists h2 {
-        margin: 200px 0 20px 0;
-        font-weight: bold;
+      .playlists {
+          margin-top: 6rem;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 2rem;
       }
       .playlists iframe {
-        padding: 50px 0;
+        border-radius: 12px;
+        margin: 0 1rem;
+        height: 500px;
+        width: 100%;
+        margin-right: 2rem;
       }
       @media (min-width: 768px) {
         .main {
           padding-top: 23%;
+          margin: auto;
         }
         .main .full-width {
           transform: rotate(0);
           margin-bottom: 2rem;
+        }
+        .playlists {
+          margin-top: 6rem;
+          grid-template-columns: 1fr 1fr;
         }
       }
       h1 {
@@ -165,47 +176,48 @@
       </h2>
 
       <div class="playlists">
-        <h2>Playlists</h2>
-          <iframe
-          style="border-radius: 12px; margin: 0 1rem;"
+        <iframe
           src="https://open.spotify.com/embed/playlist/5i6YDHQRYCJnEkmTycnTA8"
-          width="100%"
-          height="500"
           frameBorder="0"
           allowfullscreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
         <iframe
-        style="border-radius: 12px; margin: 0 1rem;"
-        src="https://open.spotify.com/embed/playlist/4dIT1gpQ9tNAwQnGBbXSpZ"
-        width="100%"
-        height="500"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-      <iframe
-      style="border-radius: 12px; margin: 0 1rem;"
-      src="https://open.spotify.com/embed/playlist/55XQ9xcHeHbOaDOVO6FJF1"
-      width="100%"
-      height="500"
-      frameBorder="0"
-      allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-    ></iframe>
-      <iframe
-      style="border-radius: 12px; margin: 0 1rem;"
-      src="https://open.spotify.com/embed/playlist/0jFVy0sjmjPCbhbwMIxHW1"
-      width="100%"
-      height="500"
-      frameBorder="0"
-      allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-    ></iframe>
+          src="https://open.spotify.com/embed/playlist/4dIT1gpQ9tNAwQnGBbXSpZ"
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/55XQ9xcHeHbOaDOVO6FJF1"
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/0jFVy0sjmjPCbhbwMIxHW1"
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/3jxBSmQpbTvYLFmV4lZz8k"
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/2ei9ugWO5FOLwxRrJo8zIn"
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
       </div>
     </div>
   </body>
