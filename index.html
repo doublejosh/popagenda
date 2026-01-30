@@ -154,37 +154,59 @@
         font-size: 1rem;
         opacity: 0.5;
       }
+      .social-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+      }
+      .social-row h2 {
+        margin: 0.5rem;
+      }
     </style>
 
     <div class="main">
       <img class="full-width" src="popagenda-logo.svg" alt="POP·AGENDA" />
 
-      <h2 class="subhead">SERVE THE MAIZE</h2>
-      <h2>
-        <a href="https://www.instagram.com/the_pop_agenda/">
-          <i class="fa-brands fa-instagram"></i> IG
-        </a>
-      </h2>
-      <h2>
-        <a href="https://soundcloud.com/doublejosh">
-          <i class="fa-brands fa-soundcloud"></i> SoundCloud
-        </a>
-      </h2>
-      <h2>
-        <a href="https://account.venmo.com/u/doublejosh">
-          <i class="fa-solid fa-money-check-dollar"></i> Venmo
-        </a>
-      </h2>
-      <h2 class="secondary">
-        <a href="https://www.tiktok.com/@the_pop_agenda">
-          <i class="fa-brands fa-tiktok"></i> TikTok
-        </a>
-      </h2>
-      <h2 class="secondary">
-        <a href="https://www.facebook.com/thepopagenda">
-          <i class="fa-brands fa-facebook"></i> Zuckbook
-        </a>
-      </h2>
+      <h2 class="subhead">Now Serving: Puppet Karaoke</h2>
+
+      <div class="social-row">
+        <h2>
+          <a href="https://www.instagram.com/the_pop_agenda/">
+            <i class="fa-brands fa-instagram"></i> IG
+          </a>
+        </h2>
+        <h2>
+          <a href="https://soundcloud.com/doublejosh">
+            <i class="fa-brands fa-soundcloud"></i> SoundCloud
+          </a>
+        </h2>
+        <h2>
+          <a href="https://account.venmo.com/u/doublejosh">
+            <i class="fa-solid fa-money-check-dollar"></i> Venmo
+          </a>
+        </h2>
+        <h2>
+          <a href="https://bsky.app/profile/popagenda.bsky.social">
+            <i class="fa-brands fa-bluesky"></i> BlueSky
+          </a>
+        </h2>
+      </div>
+
+      <div class="social-row">
+        <h2 class="secondary">
+          <a href="https://www.tiktok.com/@the_pop_agenda">
+            <i class="fa-brands fa-tiktok"></i> TikTok
+          </a>
+        </h2>
+        <h2 class="secondary">
+          <a href="https://www.facebook.com/thepopagenda">
+            <i class="fa-brands fa-facebook"></i> Zuckbook
+          </a>
+        </h2>
+      </div>
 
       <div class="playlists">
 
@@ -381,6 +403,8 @@ loading="lazy"
       ></iframe>
 
       </div>
+
+      <h2 class="subhead">SERVE THE MAIZE</h2>
     </div>
   </body>
 </html>
