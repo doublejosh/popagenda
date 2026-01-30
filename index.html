@@ -165,6 +165,40 @@
       .social-row h2 {
         margin: 0.5rem;
       }
+      /* Playlist placeholder styles */
+      .playlist-placeholder {
+        border-radius: 12px;
+        margin: 0 1rem;
+        height: 500px;
+        width: 100%;
+        margin-right: 2rem;
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .playlist-placeholder::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        animation: shimmer 2s infinite;
+      }
+      @keyframes shimmer {
+        100% {
+          left: 100%;
+        }
+      }
     </style>
 
     <div class="main">
@@ -208,204 +242,21 @@
         </h2>
       </div>
 
-      <div class="playlists">
-
-        <iframe
-          src="https://open.spotify.com/embed/playlist/5i6YDHQRYCJnEkmTycnTA8"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-
-        <iframe
-          src="https://open.spotify.com/embed/playlist/7CX4yFvbk8qhd4bOarW1Uj"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-
-        <iframe
-          src="https://open.spotify.com/embed/playlist/2E2a4uOjO26WYUTkiAS39w"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-
-        <iframe
-        src="https://open.spotify.com/embed/playlist/29cFTck6GmCblcJGmgTQMw"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-
-      <iframe
-      src="https://open.spotify.com/embed/playlist/2LM4hjtXroBxnL9Oc4mmDH"
-      frameBorder="0"
-      allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-    ></iframe>
-
-        <iframe
-          src="https://open.spotify.com/embed/playlist/4dIT1gpQ9tNAwQnGBbXSpZ"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-
-        <iframe
-          src="https://open.spotify.com/embed/playlist/0jFVy0sjmjPCbhbwMIxHW1"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-
-        <iframe
-          src="https://open.spotify.com/embed/playlist/2ei9ugWO5FOLwxRrJo8zIn"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-        <iframe
-          src="https://open.spotify.com/embed/playlist/3jxBSmQpbTvYLFmV4lZz8k"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-
-        <iframe
-          src="https://open.spotify.com/embed/playlist/3H6sgBp8YIC09PEapnVA5y"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-
-        <iframe
-          src="https://open.spotify.com/embed/playlist/1xdmw9lU2y9eTEFJ7QUBD6"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-        <iframe
-          src="https://open.spotify.com/embed/playlist/2lBcvQH2nSm3x3451XrRFb"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-
-        <iframe
-          src="https://open.spotify.com/embed/playlist/4ceccORamMfqPqjUktpwAn"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-        <iframe
-          src="https://open.spotify.com/embed/playlist/4Q11b1O8oJqEPqjr49qwpJ?si"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-
-        <iframe
-          src="https://open.spotify.com/embed/playlist/0TeKjEV5WPXyodlhn0YroJ"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-        <iframe
-          src="https://open.spotify.com/embed/playlist/7BQb0C4pUanOb7bg2smTk2"
-          frameBorder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-
-
-      <iframe
-      src="https://open.spotify.com/embed/playlist/05mQzUWjc2IwjWgAQ0lbmr"
-      frameBorder="0"
-      allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-    ></iframe>
-
-    <iframe
-    src="https://open.spotify.com/embed/playlist/75rQQfUk7QPXVdbLC5DrE7"
-    frameBorder="0"
-    allowfullscreen=""
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy"
-  ></iframe>
-
-
-<iframe
-src="https://open.spotify.com/embed/playlist/692MFUtr00zbGemF39FSo9"
-frameBorder="0"
-allowfullscreen=""
-allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-loading="lazy"
-></iframe>
-
-
-<iframe
-src="https://open.spotify.com/embed/playlist/4w2p6FGsHuRGA7W9gPODt8"
-frameBorder="0"
-allowfullscreen=""
-allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-loading="lazy"
-></iframe>
-
-
-        
-
-        <iframe
-        src="https://open.spotify.com/embed/playlist/5oGFfV7zgrNlWeLhMF4H4j"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://open.spotify.com/embed/playlist/37WTjFZ5Vgbr9cUvmLDB8b"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-
-      <iframe
-        src="https://open.spotify.com/embed/playlist/1c1iQBDS2pndA6jB8CktY9"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        src="https://open.spotify.com/embed/playlist/605TAEQO35Jts3kxKdbzyv"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-
+      <div class="playlists" id="playlists-container">
+        <!-- Playlists will be dynamically loaded here -->
       </div>
 
       <h2 class="subhead">SERVE THE MAIZE</h2>
     </div>
+
+    <script src="js/lazy-playlists.js"></script>
+    <script>
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initLazyPlaylists);
+      } else {
+        initLazyPlaylists();
+      }
+    </script>
   </body>
 </html>
 
