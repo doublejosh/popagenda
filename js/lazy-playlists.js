@@ -80,13 +80,34 @@ function createPlaylistCard(playlist) {
     card.appendChild(img);
   }
 
+  const text = document.createElement('span');
+  text.className = 'playlist-card-text';
+  card.appendChild(text);
+
   const title = document.createElement('span');
   title.className = 'playlist-card-title';
   title.textContent = playlist.title;
-  card.appendChild(title);
+  text.appendChild(title);
+
+  if (playlist.trackCount) {
+    const tracks = document.createElement('span');
+    tracks.className = 'playlist-card-tracks';
+    tracks.textContent = formatTrackInfo(playlist.trackCount);
+    text.appendChild(tracks);
+  }
 
   card.addEventListener('click', () => loadPlaylist(card));
   return card;
+}
+
+/**
+ * Format track count with an approximate length, assuming ~4 minutes per track
+ */
+function formatTrackInfo(trackCount) {
+  const minutes = trackCount * 4;
+  const hours = Math.floor(minutes / 60);
+  const length = hours ? `${hours} hr ${minutes % 60} min` : `${minutes} min`;
+  return `${trackCount} ${trackCount === 1 ? 'track' : 'tracks'} · ~${length}`;
 }
 
 /**
