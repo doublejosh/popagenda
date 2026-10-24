@@ -165,39 +165,43 @@
       .social-row h2 {
         margin: 0.5rem;
       }
-      /* Playlist placeholder styles */
-      .playlist-placeholder {
+      /* Playlist card styles */
+      .playlist-card {
+        border: none;
         border-radius: 12px;
         margin: 0 1rem;
-        height: 500px;
         width: 100%;
         margin-right: 2rem;
+        padding: 1rem;
         background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font: inherit;
         display: flex;
         align-items: center;
-        justify-content: center;
-        position: relative;
-        overflow: hidden;
+        gap: 1rem;
+        text-align: left;
+        align-self: start;
+        cursor: pointer;
+        transition: background 0.2s;
       }
-      .playlist-placeholder::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.1),
-          transparent
-        );
-        animation: shimmer 2s infinite;
+      .playlist-card:hover,
+      .playlist-card:focus-visible {
+        background: rgba(255, 255, 255, 0.2);
       }
-      @keyframes shimmer {
-        100% {
-          left: 100%;
-        }
+      .playlist-card img {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+      .playlist-card-title {
+        flex: 1;
+        font-size: 1.1rem;
+      }
+      .playlist-card-play {
+        color: #fff90a;
+        font-size: 1.5rem;
       }
     </style>
 
@@ -249,7 +253,7 @@
       <h2 class="subhead">SERVE THE MAIZE</h2>
     </div>
 
-    <script src="js/lazy-playlists.js"></script>
+    <script src="js/lazy-playlists.js?v=2"></script>
     <script>
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initLazyPlaylists);

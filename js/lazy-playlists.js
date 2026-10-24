@@ -1,6 +1,6 @@
 /**
- * Lazy Loading Spotify Playlists
- * Loads initial playlists immediately, then lazy loads remaining playlists as they scroll into view
+ * Click-to-load Spotify Playlists
+ * Renders a lightweight card for each playlist; the Spotify embed only loads when a card is clicked
  */
 
 let config = null;
@@ -11,7 +11,7 @@ let config = null;
 async function initLazyPlaylists() {
   try {
     // Fetch playlist configuration
-    const response = await fetch('playlists.json');
+    const response = await fetch('playlists.json', { cache: 'no-cache' });
     if (!response.ok) {
       throw new Error(`Failed to fetch playlists.json: ${response.statusText}`);
     }
@@ -24,58 +24,45 @@ async function initLazyPlaylists() {
       return;
     }
 
-    // Create placeholders for all playlists
-    config.playlists.forEach((playlistId, index) => {
-      const placeholder = createPlaylistPlaceholder(playlistId, index);
-      container.appendChild(placeholder);
+    // Create a card for each playlist
+    config.playlists.forEach((playlist) => {
+      container.appendChild(createPlaylistCard(playlist));
     });
-
-    // Get all placeholders
-    const placeholders = container.querySelectorAll('.playlist-placeholder');
-
-    // Load initial playlists immediately
-    for (let i = 0; i < Math.min(config.initialLoadCount, placeholders.length); i++) {
-      loadPlaylist(placeholders[i]);
-    }
-
-    // Set up Intersection Observer for remaining playlists
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const placeholder = entry.target;
-            if (placeholder.classList.contains('playlist-placeholder')) {
-              loadPlaylist(placeholder);
-              observer.unobserve(placeholder); // Stop observing once loaded
-            }
-          }
-        });
-      },
-      {
-        rootMargin: '200px', // Load 200px before entering viewport
-        threshold: 0.01 // Trigger when 1% visible
-      }
-    );
-
-    // Observe remaining placeholders (skip initially loaded ones)
-    for (let i = config.initialLoadCount; i < placeholders.length; i++) {
-      observer.observe(placeholders[i]);
-    }
-
   } catch (error) {
     console.error('Error initializing lazy playlists:', error);
   }
 }
 
 /**
- * Create a placeholder div with loading animation
+ * Create a clickable card showing the playlist cover and title
  */
-function createPlaylistPlaceholder(playlistId, index) {
-  const placeholder = document.createElement('div');
-  placeholder.className = 'playlist-placeholder';
-  placeholder.dataset.playlistId = playlistId;
-  placeholder.dataset.index = index;
-  return placeholder;
+function createPlaylistCard(playlist) {
+  const card = document.createElement('button');
+  card.type = 'button';
+  card.className = 'playlist-card';
+  card.dataset.playlistId = playlist.id;
+  card.setAttribute('aria-label', `Load playlist: ${playlist.title}`);
+
+  if (playlist.image) {
+    const img = document.createElement('img');
+    img.src = playlist.image;
+    img.alt = '';
+    img.loading = 'lazy';
+    img.onerror = () => img.remove();
+    card.appendChild(img);
+  }
+
+  const title = document.createElement('span');
+  title.className = 'playlist-card-title';
+  title.textContent = playlist.title;
+  card.appendChild(title);
+
+  const play = document.createElement('i');
+  play.className = 'fa-solid fa-play playlist-card-play';
+  card.appendChild(play);
+
+  card.addEventListener('click', () => loadPlaylist(card));
+  return card;
 }
 
 /**
@@ -91,16 +78,13 @@ function createIframe(playlistId, iframeConfig) {
 }
 
 /**
- * Replace placeholder with iframe
+ * Replace card with iframe
  */
-function loadPlaylist(placeholder) {
-  if (!placeholder || !placeholder.dataset.playlistId) {
+function loadPlaylist(card) {
+  if (!card || !card.dataset.playlistId) {
     return;
   }
 
-  const playlistId = placeholder.dataset.playlistId;
-  const iframe = createIframe(playlistId, config.iframeConfig);
-
-  // Replace placeholder with iframe
-  placeholder.replaceWith(iframe);
+  const iframe = createIframe(card.dataset.playlistId, config.iframeConfig);
+  card.replaceWith(iframe);
 }
