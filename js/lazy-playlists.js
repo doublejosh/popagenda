@@ -11,7 +11,7 @@ let config = null;
 async function initLazyPlaylists() {
   try {
     // Fetch playlist configuration
-    const response = await fetch('playlists.json', { cache: 'no-cache' });
+    const response = await fetch('playlists.json?v=3', { cache: 'no-cache' });
     if (!response.ok) {
       throw new Error(`Failed to fetch playlists.json: ${response.statusText}`);
     }
@@ -24,13 +24,41 @@ async function initLazyPlaylists() {
       return;
     }
 
-    // Create a card for each playlist
+    // Create a card for each playlist, grouping series into their own section
+    const seriesGrids = {};
     config.playlists.forEach((playlist) => {
-      container.appendChild(createPlaylistCard(playlist));
+      const card = createPlaylistCard(playlist);
+      if (!playlist.series) {
+        container.appendChild(card);
+        return;
+      }
+      if (!seriesGrids[playlist.series]) {
+        seriesGrids[playlist.series] = createSeriesSection(playlist.series, container);
+      }
+      seriesGrids[playlist.series].appendChild(card);
     });
   } catch (error) {
     console.error('Error initializing lazy playlists:', error);
   }
+}
+
+/**
+ * Create a full-width series section and return its inner grid
+ */
+function createSeriesSection(name, container) {
+  const section = document.createElement('section');
+  section.className = 'playlist-series';
+
+  const heading = document.createElement('h3');
+  heading.textContent = name;
+  section.appendChild(heading);
+
+  const grid = document.createElement('div');
+  grid.className = 'playlist-series-grid';
+  section.appendChild(grid);
+
+  container.appendChild(section);
+  return grid;
 }
 
 /**
@@ -56,10 +84,6 @@ function createPlaylistCard(playlist) {
   title.className = 'playlist-card-title';
   title.textContent = playlist.title;
   card.appendChild(title);
-
-  const play = document.createElement('i');
-  play.className = 'fa-solid fa-play playlist-card-play';
-  card.appendChild(play);
 
   card.addEventListener('click', () => loadPlaylist(card));
   return card;

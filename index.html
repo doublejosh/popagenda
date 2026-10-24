@@ -1,266 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>POP·AGENDA - let them eat pop</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-    <meta property="og:title" content="POP·AGENDA - let them eat pop" />
-    <meta
-      property="og:description"
-      name="description"
-      content="The poptocrats shall serve the maize."
-    />
-    <meta property="og:image" content="popagenda-logo.png" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Oxygen&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/e24c0b5a38.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <style>
-      html,
-      body {
-        min-height: 100%;
-        padding: 0;
-        margin: 0;
-      }
-      body {
-        font-family: "Oxygen", sans-serif;
-        background: #f22000;
-        background: -moz-linear-gradient(top, #bc261a 0%, #a31408 100%);
-        background: -webkit-linear-gradient(top, #bc261a 0%, #a31408 100%);
-        background: linear-gradient(to bottom, #bc261a 0%, #a31408 100%);
-        text-align: center;
-        color: #fff;
-        font-size: 16px;
-      }
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>POP·AGENDA - let them eat pop</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <meta property="og:title" content="POP·AGENDA - let them eat pop" />
+  <meta property="og:description" name="description" content="The poptocrats shall serve the maize." />
+  <meta property="og:image" content="popagenda-logo.png" />
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/e24c0b5a38.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <style>
+    html,
+    body {
+      min-height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Oxygen", sans-serif;
+      background: #f22000;
+      background: -moz-linear-gradient(top, #bc261a 0%, #a31408 100%);
+      background: -webkit-linear-gradient(top, #bc261a 0%, #a31408 100%);
+      background: linear-gradient(to bottom, #bc261a 0%, #a31408 100%);
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .main {
+      max-width: 1200px;
+      padding: 55% 0 4rem 0;
+      position: relative;
+    }
+
+    .full-width {
+      width: 100%;
+    }
+
+    .main .full-width {
+      transform: rotate(270deg);
+      margin-bottom: 60%;
+    }
+
+    .playlists,
+    .playlist-series-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      --gap: 1rem;
+      gap: var(--gap);
+    }
+
+    .playlists {
+      margin: 6rem 2rem 2rem;
+    }
+
+    .playlists iframe,
+    .playlist-card {
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .playlists iframe {
+      border-radius: 12px;
+      height: 500px;
+    }
+
+    @media (min-width: 768px) {
       .main {
-        max-width: 800px;
-        padding: 55% 0 4rem 0;
-        position: relative;
+        padding-top: 23%;
+        margin: auto;
       }
-      .full-width {
-        width: 100%;
-      }
+
       .main .full-width {
-        transform: rotate(270deg);
-        margin-bottom: 60%;
-      }
-      .playlists {
-          margin: 6rem 3rem 2rem 1rem;
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 2rem;
-      }
-      .playlists iframe {
-        border-radius: 12px;
-        margin: 0 1rem;
-        height: 500px;
-        width: 100%;
-        margin-right: 2rem;
-      }
-      @media (min-width: 768px) {
-        .main {
-          padding-top: 23%;
-          margin: auto;
-        }
-        .main .full-width {
-          transform: rotate(0);
-          margin-bottom: 2rem;
-        }
-        .playlists {
-          margin-top: 6rem;
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-      h1 {
-        font-size: 2.25rem;
-        margin-bottom: 0;
-      }
-      @media (min-width: 768px) {
-        h1 {
-          font-size: 3.5rem;
-        }
-      }
-      h1 a {
-        color: #a5928e;
-      }
-      h1 span {
-        color: #fff90a;
-      }
-      h2 {
-        font-weight: normal;
-        margin-top: 0.5rem;
-        margin-bottom: 0;
-      }
-      h2 a {
-        color: #fff;
-      }
-      h2 a:hover {
-        opacity: 0.8;
-      }
-      h2 i {
-        margin-right: 0.5rem;
-      }
-      h3 {
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-size: 2rem;
-        font-weight: lighter;
-      }
-      .subhead {
-        color: yellow;
+        transform: rotate(0);
         margin-bottom: 2rem;
       }
-      a {
-        text-decoration: none;
-        color: #fff;
-      }
-      p {
-        text-align: left;
-        font-size: 1.25rem;
-      }
-      b {
-        font-weight: 500;
-      }
-      .row {
-        overflow: hidden;
-        margin-top: 3rem;
-      }
-      .grid-half {
-        width: 48%;
-        margin-right: 2%;
-        margin-bottom: 20px;
-        float: left;
-      }
-      a img {
-        border: none;
-      }
-      @media (min-width: 768px) {
-        .d-md-none {
-          display: none !important;
-        }
-      }
-      .secondary a {
-        font-size: 1rem;
-        opacity: 0.5;
-      }
-      .social-row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-        margin-bottom: 1rem;
-      }
-      .social-row h2 {
-        margin: 0.5rem;
-      }
-      /* Playlist card styles */
+
+      .playlists iframe,
       .playlist-card {
-        border: none;
-        border-radius: 12px;
-        margin: 0 1rem;
-        width: 100%;
-        margin-right: 2rem;
-        padding: 1rem;
-        background: rgba(255, 255, 255, 0.1);
-        color: #fff;
-        font: inherit;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        text-align: left;
-        align-self: start;
-        cursor: pointer;
-        transition: background 0.2s;
+        width: calc((100% - var(--gap)) / 2);
       }
-      .playlist-card:hover,
-      .playlist-card:focus-visible {
-        background: rgba(255, 255, 255, 0.2);
+    }
+
+    @media (min-width: 1024px) {
+
+      .playlists iframe,
+      .playlist-card {
+        width: calc((100% - 2 * var(--gap)) / 3);
       }
-      .playlist-card img {
-        width: 80px;
-        height: 80px;
-        border-radius: 8px;
-        object-fit: cover;
-        flex-shrink: 0;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3.5rem;
       }
-      .playlist-card-title {
-        flex: 1;
-        font-size: 1.1rem;
+    }
+
+    h1 a {
+      color: #a5928e;
+    }
+
+    h1 span {
+      color: #fff90a;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+    }
+
+    h2 a {
+      color: #fff;
+    }
+
+    h2 a:hover {
+      opacity: 0.8;
+    }
+
+    h2 i {
+      margin-right: 0.5rem;
+    }
+
+    h3 {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 2rem;
+      font-weight: lighter;
+    }
+
+    .subhead {
+      color: white;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    p {
+      text-align: left;
+      font-size: 1.25rem;
+    }
+
+    b {
+      font-weight: 500;
+    }
+
+    .row {
+      overflow: hidden;
+      margin-top: 3rem;
+    }
+
+    .grid-half {
+      width: 48%;
+      margin-right: 2%;
+      margin-bottom: 20px;
+      float: left;
+    }
+
+    a img {
+      border: none;
+    }
+
+    @media (min-width: 768px) {
+      .d-md-none {
+        display: none !important;
       }
-      .playlist-card-play {
-        color: #fff90a;
-        font-size: 1.5rem;
-      }
-    </style>
+    }
 
-    <div class="main">
-      <img class="full-width" src="popagenda-logo.svg" alt="POP·AGENDA" />
+    .secondary a {
+      font-size: 1rem;
+      opacity: 0.5;
+    }
 
-      <h2 class="subhead">Now Serving: Puppet Karaoke</h2>
+    .social-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
 
-      <div class="social-row">
-        <h2>
-          <a href="https://www.instagram.com/the_pop_agenda/">
-            <i class="fa-brands fa-instagram"></i> IG
-          </a>
-        </h2>
-        <h2>
-          <a href="https://soundcloud.com/doublejosh">
-            <i class="fa-brands fa-soundcloud"></i> SoundCloud
-          </a>
-        </h2>
-        <h2>
-          <a href="https://account.venmo.com/u/doublejosh">
-            <i class="fa-solid fa-money-check-dollar"></i> Venmo
-          </a>
-        </h2>
-        <h2>
-          <a href="https://bsky.app/profile/popagenda.bsky.social">
-            <i class="fa-brands fa-bluesky"></i> BlueSky
-          </a>
-        </h2>
-      </div>
+    .social-row h2 {
+      margin: 0.5rem;
+    }
 
-      <div class="social-row">
-        <h2 class="secondary">
-          <a href="https://www.tiktok.com/@the_pop_agenda">
-            <i class="fa-brands fa-tiktok"></i> TikTok
-          </a>
-        </h2>
-        <h2 class="secondary">
-          <a href="https://www.facebook.com/thepopagenda">
-            <i class="fa-brands fa-facebook"></i> Zuckbook
-          </a>
-        </h2>
-      </div>
+    /* Playlist card styles */
+    .playlist-card {
+      border: none;
+      border-radius: 12px;
+      padding: 0 1rem 0 0;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font: inherit;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-align: left;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
 
-      <div class="playlists" id="playlists-container">
-        <!-- Playlists will be dynamically loaded here -->
-      </div>
+    .playlist-card:hover,
+    .playlist-card:focus-visible {
+      background: rgba(255, 255, 255, 0.2);
+    }
 
-      <h2 class="subhead">SERVE THE MAIZE</h2>
+    .playlist-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .playlist-card-title {
+      flex: 1;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: rgb(0, 0, 0, .6);
+    }
+
+    /* Playlist series styles */
+    .playlist-series {
+      width: 100%;
+      margin: 1rem 0;
+      padding: 0 0 2rem 0;
+      border-top: 2px solid #fff90a;
+      border-bottom: 2px solid #fff90a;
+    }
+
+    .playlist-series h3 {
+      color: #fff90a;
+      margin: 1.5rem 0;
+    }
+  </style>
+
+  <div class="main">
+    <img class="full-width" src="popagenda-logo.svg" alt="POP·AGENDA" />
+
+    <h2 class="subhead">Now Serving: Puppet Karaoke</h2>
+
+    <div class="social-row">
+      <h2>
+        <a href="https://www.instagram.com/the_pop_agenda/">
+          <i class="fa-brands fa-instagram"></i> IG
+        </a>
+      </h2>
+      <h2>
+        <a href="https://soundcloud.com/doublejosh">
+          <i class="fa-brands fa-soundcloud"></i> SoundCloud
+        </a>
+      </h2>
+      <h2>
+        <a href="https://account.venmo.com/u/doublejosh">
+          <i class="fa-solid fa-money-check-dollar"></i> Venmo
+        </a>
+      </h2>
+      <h2>
+        <a href="https://bsky.app/profile/popagenda.bsky.social">
+          <i class="fa-brands fa-bluesky"></i> BlueSky
+        </a>
+      </h2>
     </div>
 
-    <script src="js/lazy-playlists.js?v=2"></script>
-    <script>
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initLazyPlaylists);
-      } else {
-        initLazyPlaylists();
-      }
-    </script>
-  </body>
-</html>
+    <div class="social-row">
+      <h2 class="secondary">
+        <a href="https://www.tiktok.com/@the_pop_agenda">
+          <i class="fa-brands fa-tiktok"></i> TikTok
+        </a>
+      </h2>
+      <h2 class="secondary">
+        <a href="https://www.facebook.com/thepopagenda">
+          <i class="fa-brands fa-facebook"></i> Zuckbook
+        </a>
+      </h2>
+    </div>
 
+    <div class="playlists" id="playlists-container">
+      <!-- Playlists will be dynamically loaded here -->
+    </div>
+
+    <h2 class="subhead">SERVE THE MAIZE</h2>
+  </div>
+
+  <script src="js/lazy-playlists.js?v=4"></script>
+  <script>
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initLazyPlaylists);
+    } else {
+      initLazyPlaylists();
+    }
+  </script>
+</body>
+
+</html>

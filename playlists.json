@@ -3,122 +3,224 @@
     {
       "id": "5i6YDHQRYCJnEkmTycnTA8",
       "title": "🍿 POPAGENDA",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da848bad6667d9e7b2f493189405"
-    },
-    {
-      "id": "7CX4yFvbk8qhd4bOarW1Uj",
-      "title": "ES #15-18 (djlo) Return Sheep",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da845c4ace5f45e2f5f8130e4cd4"
-    },
-    {
-      "id": "2E2a4uOjO26WYUTkiAS39w",
-      "title": "Critical Retiree",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84bb84e69c32d97067a8b966ec"
-    },
-    {
-      "id": "29cFTck6GmCblcJGmgTQMw",
-      "title": "ES #11&12 (djlo)",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84d5af9220ee1066faea881f32"
-    },
-    {
-      "id": "2LM4hjtXroBxnL9Oc4mmDH",
-      "title": "Casca Dia ‘24",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da840a9850f6589287993ef252bb"
-    },
-    {
-      "id": "4dIT1gpQ9tNAwQnGBbXSpZ",
-      "title": "City of the Future - Party",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da845ce4185179b20f14858e2863"
-    },
-    {
-      "id": "0jFVy0sjmjPCbhbwMIxHW1",
-      "title": "Why We Started in the First Place",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da8407029cfddbbceb0098dae41f"
-    },
-    {
-      "id": "2ei9ugWO5FOLwxRrJo8zIn",
-      "title": "Workington",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da846379636f2f3ac656fd50df24"
-    },
-    {
-      "id": "3jxBSmQpbTvYLFmV4lZz8k",
-      "title": "👹 Evil Does It",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84511662fd27cba578ef324c82"
-    },
-    {
-      "id": "3H6sgBp8YIC09PEapnVA5y",
-      "title": "Sunrise Dreams",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84f1bc6a5007119f339f1ecdc7"
-    },
-    {
-      "id": "1xdmw9lU2y9eTEFJ7QUBD6",
-      "title": "Perfectly Chill",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84457687a2bc91f32ade02ecbe"
-    },
-    {
-      "id": "2lBcvQH2nSm3x3451XrRFb",
-      "title": "Austin Auto",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84c3396354566efeac746eab52"
-    },
-    {
-      "id": "4ceccORamMfqPqjUktpwAn",
-      "title": "🤘 Maddest Max",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da844a7a8bd9894bfd58755681b3"
-    },
-    {
-      "id": "4Q11b1O8oJqEPqjr49qwpJ",
-      "title": "🤪 Weirdos",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8457e308313dc2705f29d00064"
-    },
-    {
-      "id": "0TeKjEV5WPXyodlhn0YroJ",
-      "title": "Out Again",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84f6c7f3595342d68fb3dde99e"
-    },
-    {
-      "id": "7BQb0C4pUanOb7bg2smTk2",
-      "title": "PopUpSet",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da840a1d1d07874783ee876d5587"
-    },
-    {
-      "id": "05mQzUWjc2IwjWgAQ0lbmr",
-      "title": "🎠 Nasty Pony",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da845edbbcacbc2068ac057e42c8"
-    },
-    {
-      "id": "75rQQfUk7QPXVdbLC5DrE7",
-      "title": "Blank Canvas #infowave",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da842218ff84db2e5fbf9debc57f"
-    },
-    {
-      "id": "692MFUtr00zbGemF39FSo9",
-      "title": "Electric Sheepshow X (djlo)",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84fe8e2e98eba3fb4f7ce92dde"
-    },
-    {
-      "id": "4w2p6FGsHuRGA7W9gPODt8",
-      "title": "Electric Sheepshow #5 (djlo) evil",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84450035977bfaa5c28f6be866"
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da848bad6667d9e7b2f493189405",
+      "series": "BOUGIE"
     },
     {
       "id": "5oGFfV7zgrNlWeLhMF4H4j",
       "title": "Electric Sheepshow #1 (djlo) chillwave",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da841f5f801160dec823b18a7a25"
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da841f5f801160dec823b18a7a25",
+      "series": "RACHET"
     },
     {
       "id": "37WTjFZ5Vgbr9cUvmLDB8b",
       "title": "Electric Sheepshow #2 (djlo) chillwave",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8440aae9bcb39bbed1a4f03156"
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8440aae9bcb39bbed1a4f03156",
+      "series": "RACHET"
     },
     {
       "id": "1c1iQBDS2pndA6jB8CktY9",
       "title": "Electric Sheepshow #3 (djlo)",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84fb31eab14dbc95b7d6f9c97f"
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84fb31eab14dbc95b7d6f9c97f",
+      "series": "RACHET"
     },
     {
       "id": "605TAEQO35Jts3kxKdbzyv",
       "title": "Electric Sheepshow #4 (djlo) late summer jams",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da8407838c692f1beed52a63e68c"
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da8407838c692f1beed52a63e68c",
+      "series": "RACHET"
+    },
+    {
+      "id": "4w2p6FGsHuRGA7W9gPODt8",
+      "title": "Electric Sheepshow #5 (djlo) evil",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84450035977bfaa5c28f6be866",
+      "series": "RACHET"
+    },
+    {
+      "id": "692MFUtr00zbGemF39FSo9",
+      "title": "Electric Sheepshow X (djlo)",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84fe8e2e98eba3fb4f7ce92dde",
+      "series": "RACHET"
+    },
+    {
+      "id": "29cFTck6GmCblcJGmgTQMw",
+      "title": "ES #11&12 (djlo)",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84d5af9220ee1066faea881f32",
+      "series": "RACHET"
+    },
+    {
+      "id": "7CX4yFvbk8qhd4bOarW1Uj",
+      "title": "ES #15-18 (djlo) Return Sheep",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da845c4ace5f45e2f5f8130e4cd4",
+      "series": "RACHET"
+    },
+    {
+      "id": "2E2a4uOjO26WYUTkiAS39w",
+      "title": "Critical Retiree",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84bb84e69c32d97067a8b966ec",
+      "series": "RACHET"
+    },
+    {
+      "id": "2LM4hjtXroBxnL9Oc4mmDH",
+      "title": "Casca Dia ‘24",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da840a9850f6589287993ef252bb",
+      "series": "RACHET"
+    },
+    {
+      "id": "4dIT1gpQ9tNAwQnGBbXSpZ",
+      "title": "City of the Future - Party",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da845ce4185179b20f14858e2863",
+      "series": "RACHET"
+    },
+    {
+      "id": "0jFVy0sjmjPCbhbwMIxHW1",
+      "title": "Why We Started in the First Place",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da8407029cfddbbceb0098dae41f",
+      "series": "RACHET"
+    },
+    {
+      "id": "2ei9ugWO5FOLwxRrJo8zIn",
+      "title": "Workington",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da846379636f2f3ac656fd50df24",
+      "series": "BOUGIE"
+    },
+    {
+      "id": "3jxBSmQpbTvYLFmV4lZz8k",
+      "title": "👹 Evil Does It",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84511662fd27cba578ef324c82",
+      "series": "RACHET"
+    },
+    {
+      "id": "3H6sgBp8YIC09PEapnVA5y",
+      "title": "Sunrise Dreams",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84f1bc6a5007119f339f1ecdc7",
+      "series": "BOUGIE"
+    },
+    {
+      "id": "1xdmw9lU2y9eTEFJ7QUBD6",
+      "title": "Perfectly Chill",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84457687a2bc91f32ade02ecbe",
+      "series": "CLASSY"
+    },
+    {
+      "id": "2lBcvQH2nSm3x3451XrRFb",
+      "title": "Austin Auto",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84c3396354566efeac746eab52",
+      "series": "BOUGIE"
+    },
+    {
+      "id": "4ceccORamMfqPqjUktpwAn",
+      "title": "🤘 Maddest Max",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da844a7a8bd9894bfd58755681b3",
+      "series": "RACHET"
+    },
+    {
+      "id": "4Q11b1O8oJqEPqjr49qwpJ",
+      "title": "🤪 Weirdos",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8457e308313dc2705f29d00064",
+      "series": "RACHET"
+    },
+    {
+      "id": "0TeKjEV5WPXyodlhn0YroJ",
+      "title": "Out Again",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84f6c7f3595342d68fb3dde99e",
+      "series": "RACHET"
+    },
+    {
+      "id": "7BQb0C4pUanOb7bg2smTk2",
+      "title": "PopUpSet",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da840a1d1d07874783ee876d5587",
+      "series": "RACHET"
+    },
+    {
+      "id": "05mQzUWjc2IwjWgAQ0lbmr",
+      "title": "🎠 Nasty Pony",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da845edbbcacbc2068ac057e42c8",
+      "series": "RACHET"
+    },
+    {
+      "id": "75rQQfUk7QPXVdbLC5DrE7",
+      "title": "Blank Canvas #infowave",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da842218ff84db2e5fbf9debc57f",
+      "series": "CLASSY"
+    },
+    {
+      "id": "54VW9BDLonumfqmJ76UlG7",
+      "title": "80s Prom",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84d4aea1c06f456443639a42e3",
+      "series": "RACHET"
+    },
+    {
+      "id": "3ayDsoed98PHq3Un9sr18L",
+      "title": "Krampus",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8424a68307f7fb039b07b9161e",
+      "series": "RACHET"
+    },
+    {
+      "id": "0JsMXACuNTgzynhWSAIMxU",
+      "title": "The Grind",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84aae6e0c770db88bc0463412f",
+      "series": "RACHET"
+    },
+    {
+      "id": "2NwKJk7jOyzcYz65jhwRcZ",
+      "title": "Puppet Karaoke 🎎",
+      "image": "https://mosaic.scdn.co/300/ab67616d00001e0250f9a2e8f1102e1f5a76d369ab67616d00001e027400f951a16739c67b729c49ab67616d00001e028ccc17f29764d812062204a8ab67616d00001e02ed317ec13d3de9e01fb99c9e",
+      "series": "RACHET"
+    },
+    {
+      "id": "1rGssqEF82QzfHieZGjXCS",
+      "title": "Gypsychic",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84a7273edebfa427ddc6041a77",
+      "series": "RACHET"
+    },
+    {
+      "id": "7yrRGj8yvYaUV3iwtgK4Dg",
+      "title": "Don't Play Christmas Songs",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8489fe97f692417eae874a5114",
+      "series": "CLASSY"
+    },
+    {
+      "id": "02aHH1RjIlewKzcAF76zkq",
+      "title": "Art Car",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da842975202fc89986728ea280e5",
+      "series": "BOUGIE"
+    },
+    {
+      "id": "563A9tYqOzm0oFVJiFJBdV",
+      "title": "Faux TayTay",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da843ae8d560bf01302e11ffe851",
+      "series": "BOUGIE"
+    },
+    {
+      "id": "386Q0bolV7iQg4MMC1uQ6H",
+      "title": "FunKey",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8479422719d4e8c6aa82ddb532",
+      "series": "BOUGIE"
+    },
+    {
+      "id": "17XpfiefYD2Z1cIjpGKolA",
+      "title": "Skate Cream 🛼🐄",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da844c760748bebd070820c97347",
+      "series": "BOUGIE"
+    },
+    {
+      "id": "6wwnpc5S28gWjw5NP8Wvv6",
+      "title": "Curiosity Shop",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da842004ae82a0f80283beadac54",
+      "series": "BOUGIE"
+    },
+    {
+      "id": "6BLLx2hr0gGx91XRaGU7JA",
+      "title": "No Inglés",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84d13e44d318a4bc54899ab9bb",
+      "series": "CLASSY"
+    },
+    {
+      "id": "3KahayeBb1vKL6O0C5T077",
+      "title": "Disco Nap",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da849a32b51e50022d0ca6f08ff6",
+      "series": "CLASSY"
     }
   ],
   "iframeConfig": {
