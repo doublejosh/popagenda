@@ -26,6 +26,14 @@ async function initLazyPlaylists() {
 
     // Create a card for each playlist, grouping series into their own section
     const seriesGrids = {};
+
+    // Create sections in the configured order first; any unlisted series follow in playlist order
+    (config.seriesOrder || [])
+      .filter((name) => config.playlists.some((playlist) => playlist.series === name))
+      .forEach((name) => {
+        seriesGrids[name] = createSeriesSection(name, container);
+      });
+
     config.playlists.forEach((playlist) => {
       const card = createPlaylistCard(playlist);
       if (!playlist.series) {
@@ -50,7 +58,14 @@ function createSeriesSection(name, container) {
   section.className = 'playlist-series';
 
   const heading = document.createElement('h3');
-  heading.textContent = name;
+  const iconClass = config.seriesIcons && config.seriesIcons[name];
+  if (iconClass) {
+    const icon = document.createElement('i');
+    icon.className = iconClass;
+    icon.setAttribute('aria-hidden', 'true');
+    heading.append(icon, ' ');
+  }
+  heading.append(name);
   section.appendChild(heading);
 
   const grid = document.createElement('div');

@@ -11,21 +11,21 @@
       "id": "5oGFfV7zgrNlWeLhMF4H4j",
       "title": "Electric Sheepshow #1 (djlo) chillwave",
       "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da841f5f801160dec823b18a7a25",
-      "series": "RACHET",
+      "series": "BOUGIE",
       "trackCount": 46
     },
     {
       "id": "37WTjFZ5Vgbr9cUvmLDB8b",
       "title": "Electric Sheepshow #2 (djlo) chillwave",
       "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8440aae9bcb39bbed1a4f03156",
-      "series": "RACHET",
+      "series": "BOUGIE",
       "trackCount": 61
     },
     {
       "id": "1c1iQBDS2pndA6jB8CktY9",
       "title": "Electric Sheepshow #3 (djlo)",
       "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84fb31eab14dbc95b7d6f9c97f",
-      "series": "RACHET",
+      "series": "BOUGIE",
       "trackCount": 47
     },
     {
@@ -88,7 +88,7 @@
       "id": "0jFVy0sjmjPCbhbwMIxHW1",
       "title": "Why We Started in the First Place",
       "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da8407029cfddbbceb0098dae41f",
-      "series": "RACHET",
+      "series": "BOUGIE",
       "trackCount": 168
     },
     {
@@ -151,7 +151,7 @@
       "id": "7BQb0C4pUanOb7bg2smTk2",
       "title": "PopUpSet",
       "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da840a1d1d07874783ee876d5587",
-      "series": "RACHET",
+      "series": "BOUGIE",
       "trackCount": 183
     },
     {
@@ -172,7 +172,7 @@
       "id": "54VW9BDLonumfqmJ76UlG7",
       "title": "80s Prom",
       "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84d4aea1c06f456443639a42e3",
-      "series": "RACHET",
+      "series": "BOUGIE",
       "trackCount": 144
     },
     {
@@ -202,13 +202,6 @@
       "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84a7273edebfa427ddc6041a77",
       "series": "RACHET",
       "trackCount": 104
-    },
-    {
-      "id": "7yrRGj8yvYaUV3iwtgK4Dg",
-      "title": "Don't Play Christmas Songs",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8489fe97f692417eae874a5114",
-      "series": "CLASSY",
-      "trackCount": 22
     },
     {
       "id": "02aHH1RjIlewKzcAF76zkq",
@@ -258,8 +251,25 @@
       "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da849a32b51e50022d0ca6f08ff6",
       "series": "CLASSY",
       "trackCount": 130
+    },
+    {
+      "id": "3gYMs65qE8N5z9kp6DKiM0",
+      "title": "Chill House (Pool Party)",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84a58028b4eb19bba3866d427d",
+      "series": "CLASSY",
+      "trackCount": 159
     }
   ],
+  "seriesOrder": [
+    "CLASSY",
+    "BOUGIE",
+    "RACHET"
+  ],
+  "seriesIcons": {
+    "CLASSY": "fa-solid fa-music",
+    "BOUGIE": "fa-solid fa-martini-glass-citrus",
+    "RACHET": "fa-solid fa-dumpster-fire"
+  },
   "iframeConfig": {
     "frameBorder": "0",
     "allowfullscreen": "",
